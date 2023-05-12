@@ -57,7 +57,7 @@ ul{ margin: 0;
     /* z-index: 100; */
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    background-color: #31d0aa;
+    background-color:var(--white-color);
     padding: 25px 0;
 }
 @media only screen and (min-width: 768px) {
@@ -230,7 +230,7 @@ color: var(--hover-color);
 color: var(--hover-color);
 }
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people.jpg);
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,18 +241,43 @@ color: var(--hover-color);
     padding: 112px 0;
     /* padding: 188px 0; */
 }
+.hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bgmobhero.jpg);
+}
+@media only screen and (min-width: 429px) and (max-width: 768px) {
+.hero  {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bgtablhero.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),  (min-resolution: 192dpi),  (min-resolution: 2dppx) {
+      .hero {
+          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bgtablhero@2x.jpg);
+
+      }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1158px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1deskhero.jpg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero { background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1deskhero@2x.jpg);
+        
+      }
+    }
+}
 @media only screen and (min-width: 1158px) {
 .hero{
     padding: 188px 0;
   }
 }
+
 .container-hero{
     margin-left: auto;
     margin-right: auto;
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap;
+   
 }
 
 .hero-title {
@@ -665,13 +690,13 @@ margin-bottom: 72px;
     margin-left: 0;
   }
 }
-@media only screen and (min-width: 1158px) {
-   {
-    width: 264px;
+ /* @media only screen and (min-width: 1158px) { */
+ /* .footer-block { */ 
+    /* width: 264px; */
         /* gap: 120px; */
-        margin-right: 120px;
-  }
-}
+        /* margin-right: 120px; */
+  /* } */
+/* } */ 
 .filter {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
