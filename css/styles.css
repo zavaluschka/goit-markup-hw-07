@@ -70,8 +70,8 @@ ul{ margin: 0;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red; */
+    /* outline-offset: -2px; */
 }
 /* Tablet */
 @media only screen and (min-width: 768px) {
@@ -250,7 +250,7 @@ color: var(--hover-color);
       }
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1158px) {
+@media only screen and (min-width: 769px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1deskhero.jpg);
     }
@@ -1299,6 +1299,7 @@ opacity: 1;
   
 }
 .mobile-link{
+    
     display: block;
     padding-bottom: 40px;
     font-weight: 700;
@@ -1309,11 +1310,9 @@ opacity: 1;
     color: var(--textp-color);
    
 }
-.mobile-link .current{
-    color:var(--logo-color);
-}
+
 .current{
-    position: relative;
+   color:var(--logo-color);
 }
 .mobile-contacts{
 display: flex;
@@ -1324,7 +1323,7 @@ margin-bottom: 48px;
 .mobile-menu .link {
     display: block;
  
-    color: var(--textp-color);
+    
     
 }
 .mobile-socials{
